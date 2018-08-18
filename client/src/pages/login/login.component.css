@@ -1,5 +1,5 @@
 .login-container {
-    width: 47%;
+    width: 30%;
     height: 60%;
     margin: auto;
     display: flex;
@@ -9,9 +9,11 @@
     border: 1px solid #bbbbbb;
     box-shadow: 1px 1px 12px #a3a39d;
     border-radius: 5px;
+    background: white;
+    position: relative;
 }
 .login-container div {
-    margin-bottom: 5px;
+    margin-bottom: 25px;
 }
 .login-container div input{
     height: 42px;
@@ -20,4 +22,15 @@
 .header, .footer{
     height: 20%;
     display: block;
+}
+
+.app-title{
+    position: absolute;
+    top: 33px;
+    width: 100%;
+    left: 0px;
+    text-align: center;
+}
+.container{
+    background: url("../../assets/img/background.jpg") no-repeat fixed center;
 }

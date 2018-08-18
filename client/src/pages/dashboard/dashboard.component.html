@@ -2,17 +2,23 @@
 <div class="container">
     <ul class="menu">
         <li class="menu-item"  [routerLinkActive]="['active']">
-            <a [routerLink]="'/dashboard/home'">
+            <a [routerLink]="'/dashboard'">
                  Home
                 </a>
           </li>
-          <li class="menu-item" [routerLinkActive]="['active']">
-            <a  [routerLink]="'/dashboard/building'">
-                 Edificios
-                </a>
-          </li>
       </ul>
-    <div class="dashboard-container">
-        <router-outlet></router-outlet>
+    <div class="dashboard-container" *ngIf="building">
+        <div class="title">
+            {{building.name}}
+        </div>
+        <div class="room" *ngFor="let room of building.rooms" (click)="showPersons(room.number)">
+           <span class="room-name">{{room.name}}</span> 
+            <span>{{getPersons(room.number)}}</span>
+        </div>
     </div>
+</div>
+<div  class="images" *ngIf="showImages && selectedPersons.length > 0" (click)="showImages = !showImages">
+        <div class="img-holder" *ngFor="let person of selectedPersons">
+            <img [src]="person.image">
+        </div>
 </div>

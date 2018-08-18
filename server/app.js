@@ -18,7 +18,7 @@ require('./mysqlconf');
 // configuration =================
 require('./modules/faceRecog/routes/faceRecog.routes')(app);
 require('./modules/user/routes/user.routes')(app);
-
+require('./modules/building/routes/building.routes')(app);
 
 // listen (start app with node server.js) ======================================
 app.listen(8080);

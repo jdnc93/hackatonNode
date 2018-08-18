@@ -4,6 +4,9 @@
 
     </div>
     <div class="login-container">
+        <div class="app-title">
+            <h3>{{'Find&Locate'}}</h3>
+        </div>
         <div>
             <input type="text" placeholder="Usuario" [(ngModel)]="newUser.username">
         </div>
@@ -11,7 +14,7 @@
             <input type="password" placeholder="Contraseña" [(ngModel)]="newUser.password">
         </div>
         <div>
-            <button (click)="login(newUser)">Login</button>
+            <button (click)="login(newUser)" >Login</button>
         </div>
     </div>
     <div class="footer">

@@ -1,10 +1,12 @@
 .dashboard-container{
     height: 90%;
+    padding: 20px;
+    background: url("../../assets/img/background.jpg") no-repeat fixed center;
 }
 .menu{
     height: 10%;
     display: flex;
-    background: black;
+    background: #0c074b;
 }
 .menu .menu-item{
     width: 15%;
@@ -12,13 +14,62 @@
     text-align: center;
     justify-content: center;
     color: white;
+    font-size: 20px;
+    font-weight: bold;
     border-right: 1px solid white;
 }
 .menu .menu-item:hover{
-    background: #616060;
+    background: #423297;
 }
 
 .menu .menu-item a{
     height: min-content;
     margin: auto;
+}
+.room{
+    background: teal;
+    width: 200px;
+    height: 200px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid white;
+    flex-direction: column;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+    border-radius: 15px;
+    margin-right: 10px;
+}
+.room:hover{
+    background: #448af5;
+}
+.title {
+    font-size: 24px;
+    margin: 11px 0%;
+    color: white;
+    font-weight: bold;
+}
+.room-name{
+    font-weight: bold;
+}
+
+.images{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 70%;
+    background: rgba(0,0,0,0.3);
+    overflow-y: scroll;
+}
+
+.img-holder{
+    margin: 24px;
+    width: 100px;
+    /* height: 200px; */
+    display: inline-block;
+}
+.img-holder img{
+    width: 100%;
 }

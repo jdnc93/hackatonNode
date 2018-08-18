@@ -42,11 +42,7 @@ const Person = dbContext.sequelize.define('Person', {
     building: Sequelize.STRING,
 });
 
-
-
-User.hasMany(Building, {as: 'buildings', foreignKey : 'userId', targetKey: 'id'});
 Building.hasMany(Room, {as: 'rooms', foreignKey : 'buildingId', targetKey: 'id'});
-
 
 dbContext.User = User;
 dbContext.Building = Building;
