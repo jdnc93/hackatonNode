@@ -1,0 +1,24 @@
+.dashboard-container{
+    height: 90%;
+}
+.menu{
+    height: 10%;
+    display: flex;
+    background: black;
+}
+.menu .menu-item{
+    width: 15%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    border-right: 1px solid white;
+}
+.menu .menu-item:hover{
+    background: #616060;
+}
+
+.menu .menu-item a{
+    height: min-content;
+    margin: auto;
+}

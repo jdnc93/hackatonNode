@@ -1,0 +1,20 @@
+
+<div class="container">
+    <div class="header">
+
+    </div>
+    <div class="login-container">
+        <div>
+            <input type="text" placeholder="Usuario" [(ngModel)]="newUser.username">
+        </div>
+        <div>
+            <input type="password" placeholder="Contraseña" [(ngModel)]="newUser.password">
+        </div>
+        <div>
+            <button (click)="login(newUser)">Login</button>
+        </div>
+    </div>
+    <div class="footer">
+
+    </div>
+</div>
